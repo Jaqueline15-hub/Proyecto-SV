@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INICIO DE SESION</title>
+
+</head>
+<body>
+
+	<script>
+function usrpas(){
+if (document.form1.txt.value=="Profesor" && document.form1.num.value=="115117" || document.form1.txt.value=="Alumno" && document.form1.num.value=="12345"){window.location="PAGINA WEB SV/index.html";
+alert ("Usuario y Contraseña CORRECTOS. Bienvenido a la pagina del Programa Sembrando Vida.");}
+
+else {alert("Error al verificar los datos. Por favor ingresa, nombre y usuario CORRECTOS.")}
+}
+document.oncontextmenu=new Function("return false");
+</script>
+
+<center>
+
+	<h1>INICIAR SESIÓN</h1>
+	<br>
+	<br>
+ 
+<form name="form1">
+<input type="text" name="txt"> Usuario <br>
+<br>
+<input type="text" name="num"> Contraseña <br>
+<br>
+<br>
+<input type="button" value="Verificar Información" onclick="usrpas()">
+</form>
+
+</center>
+
+</body>
+</html>
+
